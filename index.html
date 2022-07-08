@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.622fdc98.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADSklEQVRYR82XS0iUURSAz/nnYTNqmjoOSoEtdJOLJHIhQdCiFq3aZRGYZu2s6KFGVhDUSEVQm5DUAu2xsTa1EHqSQlnZokHIqBYxoY6W4+jo/P73du68mofOf8dG9MIPA3PPOd8995xzz0GQXOsaJ3LMBvNu0NgOQNxMYiUAPDcojn/o+wEIn+h77tcyn/xuxUkZ1ai3qaDZU2bgSiMZq6bPorc/BOQDzh9oCjjcl9d+SSazKMD649ziz5i+SEYbELhJznDsLg6oEshNo8Xb4rpQPLOQjgUBbKcmSxUDPiKBTUsxnCiDTqaxPWNXcobj/0sAsLVMVyh+rZfusiA9xkNaOLg1A9vlvpT7MVpvDEDg5Ar2p9142CJBMMaroj0RASg+7LJqeVnvUnF7nhXhQKURKjYoYKEomVUB+r5p0NY3n8x5TsOEt9LVFoyJCEBhk/cqAjsh6/aN+Qg99RawZ8feYu/QPNR0zSVVw0G5NurIOhkBEKmmcPycSrTfr8mA7aXGBENyAKgy5OUiRQP49kZPB/nioOzps9cADJ21goLB0w+PMejoV2FG5eCa5HQNTF8Vh86R1rW1GKhwaPolX2QASm0Ir45ZI0YO3ZuFp05N32jMDvT5uVqE9jPefcBYdyrSZYUIL4/+A9jb6YPXXyVOHW9EUfYjuf82ub9uRQA4tKO9aeo9uX+LHoCV0uxZQ/ApMBsAinKUiMjoFAMfpaBYd9+qcOtN0jSMMoUfBICbAPL1ADLNFGznhduTv1+nH89B14AsAIwTgEfspjMlX7IAKcaDJg1gIsT6Ksp7DmCj4nNkG7kktLoHVPjuDgbhw0ENxqdpk9wSAHJXEK0vbVkAgSuQC8LlARBB2ExpyFcyDVe6EC2lFKcnBkKlWNytvcnbDsBq5QIXID0ASseII6suUFVSfY7/F0A0qzHPsYBIpSERAC9CZVnIVt+ZTekxSmhIhBLRhqsZUwP0U7cTFm4ThSm85qkGMenaA07TXPbWn9fRJ+RXT1MaPs1ytuUMDTvHHJmD0cG++GBiVHpoqimXzQydfTSYcLnBJKwobaMZ4A3jhOdcuA2PB129w2k8aeJ4zktoT2g8h9B4zmk8V2g899N4nic1nv8FJVqboHOFcugAAAAASUVORK5CYII=" />
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABp0lEQVQ4T51TTS8DYRB+pmu31EeI0EsjIiGuwslBGknDr3CikUgqTl3iB3CiJ4KToxAXwomEk4OoCInGoZISHwfRCrrb7Wu2TdmuXcS7h83M+84z8zwzQ7CdJvWpi1ARBkQ/gVrNawEk+bcnkFt6nGk4sYZQyQhMiCpdycTYHgZH2oELtuDPQyvye814ao7eTFfhoRmseV92CaLPMdDm5IoOlWztgAlSAPBH00sMNWIPDrZLiIZk1FUSprc07CeMrycCy/ezdWEyOXuEdGwvW/IAZ5M+eGVOd2Vg4VDH0XXeCiDyZHRTs5pZ4NJH7dkbqxlgqhqbpzmMrWVdJKFFBkhfMo8O64ueFg962ySoIQXxlIGNeA47FwZun5m95bCVIL+aYXihWC9U5h0JlrkQjL0i8VAOwD3QHAEC9YROP2F1qIqFy2F+X0f8Jg/domExIQM4UTCvShqsn+iIrGsuGjCF30T8GYBFdGvjrxXwVBba6DZIPu7/WJ+Mi7s8ts+/kTfHujhI/xtlOlCyNYOfo1wC+dMyASuyVlu+TFaJnddZJLlljuv8AUW8xEPEeL0TAAAAAElFTkSuQmCC" />
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=" />
+    <link rel="stylesheet" href="assets/index.64b66205.css">
+  </head>
+  <body class="w-full flex flex-col items-center md:bg-gray-100">
+    <!-- container  -->
+    <div class="grid grid-cols-1 md:pt-32 md:grid-cols-2 py-5 gap-y-5 w-11/12 xs:w-10/12 sm:w-9/12 md:w-10/12 lg:w-9/12 xl:w-8/12 justify-items-center">
+      <!-- left part                 -->
+      <section class="flex flex-col   self-start ">
+        <h1 class="text-[#1783fa] font-bold text-2xl self-center md:self-start sm:text-3xl md:text-4xl ">facebook</h1>
+        <div class="hidden md:flex flex-col ">
+          <h1 class="text-3xl ">Recent Logins</h1>
+          <p class="text-sm text-neutral-700  mb-5">Click your picture or add an account.</p>
+          <!-- icons  -->
+          <div class="grid grid-cols-2 gap-x-5  w-9/12 lg:w-8/12 xl:w-7/12">
+          <div class="box flex flex-col items-center border relative border-gray-300 rounded-md bg-white ">
+            <p class="absolute bg-red-500 text-white rounded-full text-xs py-1.5 px-1 -top-1 -right-1">99+</p>
+            <img class="w-full" src="assets/profile.ea0639ff.jpg"  alt="">
+            <h1 class="my-2 px-2 text-lg">Dwyane</h1>
+          </div>
+          <div class="box border border-gray-300 rounded-md bg-white flex flex-col items-center   justify-between">
+            <div class="bg-gray-100 h-full w-full grid place-items-center">
+              <img class="w-10 bg-white rounded-full" src="assets/plus-svgrepo-com.84a80510.svg" alt="">
+            </div>
+            <h1 class="my-2 text-lg font-medium whitespace-nowrap text-[#1783fa]">Add Account</h1>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- left part -->
+      <!-- right part                      -->
+      <section id="form" class=" py-6 relative rounded-md border border-gray-200 flex flex-col w-11/12 xs:w-10/12   md:w-full lg:w-11/12 px-5 gap-y-2.5 bg-white self-end">
+        <input class="border outline-none focus:border-[#1783fa] transition-all duration-1000 p-2.5 rounded-md text-md:text-lg bg-gray-100 md:bg-white" type="text" name="" id="" placeholder="Email or phone number">
+        <input class="border outline-none focus:border-[#1783fa] transition-all duration-1000 p-2.5 rounded-md text-md:text-lg bg-gray-100 md:bg-white" type="password" name="" id="" placeholder="Password">
+        <button class="bg-[#1783fa] text-white font-bold sm:text-xl py-2 rounded-md hover:bg-[#1785fae4]">Log In</button>
+        <span class="cursor-pointer text-[#1783fa] text-center text-sm font-medium hover:underline">Forgot Password?</span>
+        <span class="h-[0.5px] my-1 bg-gray-300"></span>
+        <button class="bg-[#42b72a] hover:bg-[#42b72aec] self-center px-5 py-2 sm:text-lg rounded-md text-white font-medium ">Create new account</button>
+        <p class="hidden md:block w-full text-center font-medium text-sm absolute left-0 -bottom-10">
+          <strong>Create a page </strong>
+          for a celebrity, brand or business.
+        </p>
+      </section>
+      <!-- right part  -->
+    </div>
+  </body>
+</html>
